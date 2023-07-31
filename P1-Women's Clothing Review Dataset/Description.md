@@ -1,1 +1,1 @@
-sentiment analysis of women's clothing review dataset
+sentiment analysis of women's clothing review dataset on AWS platform
