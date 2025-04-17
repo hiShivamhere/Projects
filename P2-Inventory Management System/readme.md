@@ -17,10 +17,10 @@ A simple, production-ready RESTful API using **FastAPI** and **MongoDB** (via as
 ## 📁 Project Structure
 
 inventory_api/ 
-├── main.py # FastAPI app and route definitions 
-├── models.py # Pydantic models 
-├── database.py # MongoDB async client setup 
-├── crud.py # CRUD logic using motor 
+├── main.py # FastAPI app and route definitions < br / >
+├── models.py # Pydantic models < br / >
+├── database.py # MongoDB async client setup < br / >
+├── crud.py # CRUD logic using motor < br / >
 ├── .env # Environment variables
 
 
@@ -56,7 +56,8 @@ pip install -r requirements.txt
 ### 3. Set up Environment Variables
 Create a .env file:
 
-MONGODB_URL="mongodb://localhost:27017"\n
+MONGODB_URL="mongodb://localhost:27017"
+
 DATABASE_NAME="inventory_db"
 
 ### 4. Run the Server
