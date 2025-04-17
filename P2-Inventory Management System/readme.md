@@ -17,6 +17,7 @@ A simple, production-ready RESTful API using **FastAPI** and **MongoDB** (via as
 ## 📁 Project Structure
 
 inventory_api/ 
+
 ├── main.py # FastAPI app and route definitions
 
 ├── models.py # Pydantic models 
