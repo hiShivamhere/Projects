@@ -61,9 +61,12 @@ pip install -r requirements.txt
 ### 3. Set up Environment Variables
 Create a .env file:
 
-MONGODB_URL="mongodb://localhost:27017"
+```env
 
+MONGODB_URL="mongodb://localhost:27017"
 DATABASE_NAME="inventory_db"
+
+```
 
 ### 4. Run the Server
 
