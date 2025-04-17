@@ -44,8 +44,8 @@ inventory_api/
 ### 1. Clone the Repo
 
 ```bash
-git clone https://github.com/hishivamhere/Projects/P2-Inventory Management System/inventory-api.git
-cd inventory-api
+git clone https://github.com/hishivamhere/Projects.git
+cd ./Projects/P2-Inventory Management System/
 ```
 
 ### 2. Install Dependencies
