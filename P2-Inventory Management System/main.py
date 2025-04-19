@@ -1,4 +1,6 @@
-from fastapi import FastAPI, HTTPException
+from fastapi import FastAPI, HTTPException, Depends
+from auth import get_current_user
+from users import router as user_router
 from crud import add_product, get_products, get_product, update_product, delete_product
 from models import Product
 
@@ -29,3 +31,10 @@ async def update_product_api(id: str, product: Product):
 async def delete_product_api(id: str):
     result = await delete_product(id)
     return {"deleted": result.deleted_count > 0}
+
+
+app.include_router(user_router)
+
+@app.get("/profile")
+async def read_profile(current_user=Depends(get_current_user)):
+    return {"user": current_user["email"]}

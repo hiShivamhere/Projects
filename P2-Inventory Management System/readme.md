@@ -16,18 +16,12 @@ A simple, production-ready RESTful API using **FastAPI** and **MongoDB** (via as
 
 ## 📁 Project Structure
 
-inventory_api/ 
-
-├── main.py # FastAPI app and route definitions
-
-├── models.py # Pydantic models 
-
-├── database.py # MongoDB async client setup 
-
-├── crud.py # CRUD logic using motor 
-
-├── .env # Environment variables
-
+inventory_api/
+├── auth.py             # JWT logic, user auth
+├── users.py            # Routes for login/register
+├── models.py           # Add User model
+├── crud.py             # Add user handling
+├── main.py             # Include auth routes
 
 ---
 

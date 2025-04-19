@@ -1,0 +1,14 @@
+# Ignore .env files anywhere in the project repo
+*.env
+
+# Ignore .env file in P2-Inventory Management System folder
+P2-Inventory Management System/.env
+
+#ignore 
+
+# Ignore virtual environment folder
+my-venv/
+
+#Ignore python cache files anywhere in the project
+__pycache__/
+*.py[cod]
