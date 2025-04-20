@@ -16,12 +16,14 @@ A simple, production-ready RESTful API using **FastAPI** and **MongoDB** (via as
 
 ## 📁 Project Structure
 
+```
 inventory_api/
-├── auth.py             # JWT logic, user auth
+├── auth.py             # JWT logic, user authentication
 ├── users.py            # Routes for login/register
-├── models.py           # Add User model
-├── crud.py             # Add user handling
-├── main.py             # Include auth routes
+├── models.py           # User model definition
+├── crud.py             # User handling logic
+├── main.py             # Entry point, includes auth routes
+```
 
 ---
 
