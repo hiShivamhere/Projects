@@ -1,5 +1,5 @@
 from fastapi import FastAPI, HTTPException, Depends
-from auth import get_current_user
+from auth import get_current_user, require_role
 from users import router as user_router
 from crud import add_product, get_products, get_product, update_product, delete_product
 from models import Product
@@ -38,3 +38,12 @@ app.include_router(user_router)
 @app.get("/profile")
 async def read_profile(current_user=Depends(get_current_user)):
     return {"user": current_user["email"]}
+
+@app.get("/admin-only")
+async def admin_dashboard(current_user=Depends(require_role(["admin"]))):
+    return {"message": f"Welcome admin {current_user['email']}"}
+
+@app.get("/edit-content")
+async def edit_content(current_user=Depends(require_role(["admin", "editor"]))):
+    return {"message": f"Welcome {current_user['role']}, you can edit content!"}
+

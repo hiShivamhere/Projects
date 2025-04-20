@@ -10,9 +10,11 @@ class Product(BaseModel):
 class User(BaseModel):
     email: EmailStr
     password: str
+    role : str = "viewer"  # Default role is 'viewer'
 
 class UserOut(BaseModel):
     email: EmailStr
+    role : str
     
 class Token(BaseModel):
     access_token: str
